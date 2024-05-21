@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Form</title>
+    <script>
+        function validateForm(){
+            var username=document.getElementById("username").value;
+            var password=document.getElementById("password").value;
+
+            if(username=="" || password==""){
+                alert("please enter username and password");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h2>login</h2>
+    <form onsubmit="return validateForm()">
+    <label for="username">username:</label>
+    <input type="text" id="username" name="username"></br>
+
+    <label for="password">password:</label>
+    <input type="password" id="password" name="password"></br>
+
+    <input type="submit" value="login">
+    
+    
+    
+    </form>
+   
+</body>
+</html>

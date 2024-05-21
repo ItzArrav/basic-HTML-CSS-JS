@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Button on Form</title>
+</head>
+<body>
+  <form id="myForm">
+    <input type="text" name="inputField">
+  </form>
+  <button onclick="addButton()">Add Button</button>
+  <script>
+    function addButton() {
+      var form = document.getElementById("myForm");
+      var button = document.createElement("button");
+      button.innerHTML = "Submit";
+      form.appendChild(button);
+    }
+  </script>
+</body>
+</html>
